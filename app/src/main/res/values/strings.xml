@@ -3,7 +3,6 @@
     <string name="tab_text_1">Find a game</string>
     <string name="tab_text_2">List a game</string>
 
-
     //Login activity
     <string name="hintemail">E-mail adress</string>
     <string name="hintpassword">Password</string>
@@ -14,4 +13,18 @@
     <string name="hintconfirmpassword">Confirm password</string>
     <string name="hintname">Name</string>
     <string name="hintage">Age</string>
+
+    <string-array name="role_array">
+        <item>Player</item>
+        <item>Dungeon Master</item>
+    </string-array>
+    <string-array name="orientation_images_array">
+        <item>@drawable/ic_sword</item>
+        <item>@drawable/ic_shield</item>
+    </string-array>
+
+    <string-array name="orientation_text_array">
+        <item>Attack</item>
+        <item>Defense</item>
+    </string-array>
 </resources>

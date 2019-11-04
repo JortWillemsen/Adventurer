@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
 
         profilepicview.setOnClickListener(View.OnClickListener {
             Snackbar.make(findViewById(R.id.view_pager),"Navigating to account activity", Snackbar.LENGTH_SHORT).show()
+            val intent = Intent(this, AccountActivity::class.java)
+            startActivity(intent)
         })
 
 
