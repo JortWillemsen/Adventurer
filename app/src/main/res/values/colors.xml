@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#272727</color>
+    <color name="avrgrey">#3B3B3B</color>
+    <color name="avrlightgrey">#707070</color>
+    <color name="avrred">#7C0A02</color>
+    <color name="avrgreen">#4DAA4A</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="avrblue">#3b84f9</color>
+
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
+</resources>

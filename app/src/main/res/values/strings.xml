@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Adventurer</string>
+    <string name="tab_text_1">Find a game</string>
+    <string name="tab_text_2">List a game</string>
+
+
+    //Login activity
+    <string name="hintemail">E-mail adress</string>
+    <string name="hintpassword">Password</string>
+    <string name="googlesignin">Sign in with Google</string>
+    <string name="registerhere">Register here</string>
+    <string name="loginerror">Incorrect username or password</string>
+    <string name="loginsuccess">Login succesfull</string>
+    <string name="hintconfirmpassword">Confirm password</string>
+    <string name="hintname">Name</string>
+    <string name="hintage">Age</string>
+</resources>

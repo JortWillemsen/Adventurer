@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:src="@mipmap/ic_launcher_round"
+                app:civ_border_color="@color/avrlightgrey"
+                app:civ_border_width="8dp"
+                />
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/deletebutton"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topLayout"
+            android:id="@+id/nameageline"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameLayout">
+
+            <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emailsetter"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/namebox"/>
+
+            <EditText
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/nametext"
+                    android:hint="@string/hintname"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/background"
+                    android:textColorHint="@color/avrlightgrey"
+                    android:textCursorDrawable="@color/avrred"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/nameLayout"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/ageLayout">
+
+            <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/agesetter"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/agebox"/>
+
+            <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/agetext"
+                    android:hint="@string/hintage"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"
+                    android:backgroundTint="@color/background"
+                    android:textColorHint="@color/avrlightgrey"
+                    android:textCursorDrawable="@color/avrred"
+                    android:textColor="@color/white"
+                    android:inputType="number"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

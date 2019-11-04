@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "521063863910",
+    "firebase_url": "https://adventurer-fa4a4.firebaseio.com",
+    "project_id": "adventurer-fa4a4",
+    "storage_bucket": "adventurer-fa4a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521063863910:android:f7d8b44ec50db9d5",
+        "android_client_info": {
+          "package_name": "com.jortw.adventurer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521063863910-o7dlhsmg8pevvrdk4p0obsbgefn70onc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jortw.adventurer",
+            "certificate_hash": "519ab458aee203842be8f2cb3a8fa01bce2d58ea"
+          }
+        },
+        {
+          "client_id": "521063863910-detv9guqf9qe402hl4phgvttdg2fpf8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx_EisYsB582A3qkshDLKBL7fVQk4MePg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521063863910-detv9guqf9qe402hl4phgvttdg2fpf8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
