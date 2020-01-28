@@ -28,6 +28,15 @@ import kotlinx.android.synthetic.main.activity_login.emailtext
 import kotlinx.android.synthetic.main.activity_login.passwordtext
 import kotlinx.android.synthetic.main.layout_topbar.*
 import java.lang.reflect.Array
+import com.google.firebase.FirebaseError
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.ValueEventListener
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import com.google.firebase.database.DatabaseError
+import kotlinx.android.synthetic.main.activity_new_account.*
+import java.util.logging.Logger.global
 
 
 class AccountActivity : AppCompatActivity() {
@@ -40,6 +49,10 @@ class AccountActivity : AppCompatActivity() {
         setContentView(layout.activity_account)
         database = FirebaseDatabase.getInstance()
         auth = FirebaseAuth.getInstance()
+
+        var name: String = "Standard-name"
+        var age: Int = 0
+        var role: String = "Player"
 
         val rolespinner: Spinner = findViewById(id.roleSpinner)
         ArrayAdapter.createFromResource(
@@ -77,5 +90,20 @@ class AccountActivity : AppCompatActivity() {
             Snackbar.make(findViewById(id.mainLayout),"Information updated", Snackbar.LENGTH_SHORT).show()
 
         })
+
+        val user = database.reference.child("Users").child(auth.currentUser?.uid!!)
+
+
+        val valueEventListener = object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                for (ds in dataSnapshot.children) {
+                    val username = ds.child("username").getValue(String::class.java)
+                }
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+
+            }
+        }
     }
 }
